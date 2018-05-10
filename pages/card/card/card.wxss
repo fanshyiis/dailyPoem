@@ -1,0 +1,199 @@
+/* pages/card/card/card.wxss */
+
+page {
+  background: #fff;
+  /* padding-bottom: 10rpx; */
+}
+
+.img_crad {
+  position: absolute;
+  top: 100rpx;
+  left: 50%;
+  margin-left: -270rpx;
+  z-index: 2;
+  width: 540rpx;
+  height: 540rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 50rpx rgba(0, 0, 0, 0.2);
+  /* border: 1rpx solid #eee; */
+}
+
+.img_poem{
+  transform: rotate(-20deg); 
+  right: 0rpx;
+  position: absolute;
+  bottom: 0rpx;
+  z-index: 2;
+  width: 160rpx;
+  height: 130rpx;
+  opacity: .4;
+  /* box-shadow: 0 2rpx 50rpx rgba(0, 0, 0, 0.2); */
+}
+
+.card {
+  position: relative;
+  text-align: center;
+  padding-top: 80rpx;
+}
+
+.crad_open{
+  animation:cradGo 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.text {
+  text-shadow: 0 15rpx 30rpx rgba(0, 0, 0, 0.3);
+  /* position: absolute; */
+  /* bottom: 150rpx; */
+  /* left: 60rpx; */
+  /* word-spacing: 4rpx; */
+  letter-spacing: 3rpx;
+  padding: 0rpx 30rpx;
+  text-align: center;
+  margin-top: 500rpx;
+  line-height: 70rpx;
+  font-size: 43rpx;
+  color: #666;
+}
+
+.line{
+  margin: 30rpx auto;
+  width: 200rpx;
+  height: 4rpx;
+  background: #b91511;
+}
+
+.author{
+  color: #999;
+  font-size: 30rpx;
+  text-shadow: 0 15rpx 30rpx rgba(0, 0, 0, 0.1);
+}
+
+.card_bac {
+   padding-bottom: 140rpx; 
+   left: 50%; 
+  margin: auto;
+  background: #f5f2ea;
+   top: 200rpx; 
+  position: absolute;
+  border-radius: 10rpx;
+  width: 640rpx;
+   margin-left: -320rpx; 
+  min-height: 700rpx;
+  box-shadow: 0 2rpx 50rpx rgba(0, 0, 0, 0.2);
+}
+
+.re{
+  font-size: 30rpx;
+  width: 200rpx;
+  height: 60rpx;
+  border-bottom: 1rpx solid #ccc;
+  color: #999;
+  /* border-radius: 30rpx; */
+  text-align: center;
+  line-height: 60rpx;
+  box-shadow: 0 2rpx 50rpx rgba(0, 0, 0, 0);
+  /* margin: 60rpx auto; */
+  position: absolute;
+  bottom: 20rpx;
+  left: 50%;
+  margin-left: 20rpx;
+}
+
+.re2{
+  font-size: 30rpx;
+  width: 200rpx;
+  height: 60rpx;
+  border-bottom: 1rpx solid #ccc;
+  color: #999;
+  /* border-radius: 30rpx; */
+  text-align: center;
+  line-height: 60rpx;
+  box-shadow: 0 2rpx 50rpx rgba(0, 0, 0, 0);
+  /* margin: 60rpx auto; */
+  position: absolute;
+  bottom: 20rpx;
+  left: 50%;
+  margin-left: -230rpx;
+}
+
+.poem_in{
+  transition: 1s ease-in-out;
+}
+
+/* @font-face {
+  font-family: 'HanWangKaiMediumChuIn';
+  src: url('//cdn.webfont.youziku.com/webfonts/nomal/109394/46145/5af183ad63debe320b3cca78.gif');
+  src: url('//cdn.webfont.youziku.com/webfonts/nomal/109394/46145/5af183ad63debe320b3cca78.gif?#iefix') format('embedded-opentype'),
+         url('//cdn.webfont.youziku.com/webfonts/nomal/109394/46145/5af183ad63debe320b3cca78.png') format('woff2'),
+         url('//cdn.webfont.youziku.com/webfonts/nomal/109394/46145/5af183ad63debe320b3cca78.bmp') format('woff'),
+         url('//cdn.webfont.youziku.com/webfonts/nomal/109394/46145/5af183ad63debe320b3cca78.jpg') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+ /* @font-face {
+  font-family: 'myfont';
+  src: url('//cdn.webfont.youziku.com/webfonts/custompath/93E0600742A05E70/zhide/f.bmp') format('woff');
+}  */
+
+.canvas {
+  width: 750px;
+  height: 1334px;
+  /* display: none; */
+   position: absolute; 
+    z-index: -999;  
+    top: -5000rpx;   
+  /* top: 1000rpx; */
+}
+
+.poem{
+  font-size: 30rpx;
+}
+
+.top{
+  /* animation:mymove 1s ease-in-out; */
+  transition: 1s ease-in-out;
+  margin-top: 60rpx;
+}
+
+.img_crad_open{
+  animation:myfirst 1s ease-in-out;
+  animation-fill-mode: forwards;
+  /* transition: .5s ease-in-out;  */
+  /* z-index: 0; */
+}
+
+@keyframes myfirst
+{
+0% {
+ top: 100rpx;
+}
+50% {
+  top: -360rpx;
+  z-index: 0;
+   /* transform: rotateX(70deg);   */
+}
+100% {
+  top: 100rpx;
+   /* transform: rotateX(0deg);  */
+  z-index: 0;
+}
+}
+
+@keyframes cradGo
+{
+0% {
+ top: 0rpx;
+}
+50% {
+  top: 420rpx;
+   z-index: 10; 
+   /* transform: rotateX(-70deg);  */
+}
+100% {
+  top: 0rpx;
+  /* transform: rotateX(0deg); */
+   z-index: 10; 
+}
+}

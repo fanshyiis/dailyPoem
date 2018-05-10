@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/card/card/card",
+    "pages/zhide/index/index",
+    "pages/zhide/content/content"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "值得",
+    "navigationBarTextStyle": "black"
+  }
+}

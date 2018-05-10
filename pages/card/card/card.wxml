@@ -1,0 +1,21 @@
+<!--pages/card/card/card.wxml-->
+<view class='content'>
+ <canvas canvas-id="myCanvas" width="750" height="1334"  class='canvas'/> 
+    <image bindtap='openPoem' class='img_crad {{open? "img_crad_open":""}}'  src='../../../utils/img/sl.png'></image>
+  <view bindtap='openPoem' class='card {{open? "crad_open":""}}'>
+    <view class='card_bac'>
+      <image wx:if="{{!open}}" class='img_poem' src='../../../utils/img/mypoem.png'></image>
+      <view class='text {{open? "top":""}}' style="font-family:{{FontFamily}}">
+        <view>{{poem.title}}</view>
+        <view class='line'></view>
+        <view class='author'>{{poem.author}}</view>
+        <view wx:for="{{poem.paragraphs}}" class='{{open?"poem_in":""}}' wx:if="{{open}}">
+          <view class='poem'>{{item}}</view>
+        </view>
+          <view wx:if="{{open}}" class='re' bindtap='rePeom'>重新抽取</view>
+          <view wx:if="{{open}}" class='re2' bindtap='saveImg'>保存图片</view>
+      </view>
+    </view>
+  </view>
+   <!-- <button bindtap='getFont'>test</button>  -->
+</view>

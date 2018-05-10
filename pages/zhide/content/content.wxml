@@ -1,0 +1,31 @@
+<!--pages/zhide/content/content.wxml-->
+<view class='con'>
+  <view class='header2'></view>
+  <view class='item'>
+      <!-- <view class='itemTime'>{{item.Time}}</view> -->
+      <view class='itemTitle'>{{zhide.ZD_title}}</view>
+      <view class='author clear'>
+        <image class='authorImg' src='{{zhide.belong.avatar.url}}'></image>
+        <view class='itemName'>
+          <text class='textName'>{{zhide.belong.Nick}}</text>
+        </view>
+        <view class='tagLittle'>评分: {{zhide.Rate}}</view>
+      </view>
+      <view class='onTitle'>序言</view>
+      <view class='dis'>{{zhide.ZD_summary}}</view>
+      <image class='itemImage' mode='aspectFit' src='{{zhide.mainPic.url}}'></image>
+      <view class='onTitle'>正文</view>
+      <view class='content' wx:key="{{index}}" wx:for="{{zhideContent}}" wx:for-item="item">
+         <view wx:if="{{item.type === 'image'}}" data-item="{{item}}"><image class='conImg' src="{{item.url}}" mode='aspectFit'></image></view> 
+         <view wx:else class='conText'>{{item.url}}</view> 
+      </view>
+      <view class='itemInfo clear'>
+        <view class='itemRight'>
+          <view class='rInfo'>已有
+            <text class='rNum'>{{zhide.RateNum}}</text>人评分·
+            <text class='rNum'>{{zhide.RateNum}}</text>评论·
+            <text class='rNum'>{{zhide.lookNum}}</text>看</view>
+        </view>
+      </view>
+    </view>
+</view>

@@ -1,0 +1,238 @@
+/* pages/zhide/index/index.wxss */
+.header{
+  width: 100%;
+  height: 240rpx;
+  background: #3fcb7e;
+}
+
+.header2{
+  position: fixed;
+  width: 100%;
+  height: 240rpx;
+  background: #3fcb7e;
+}
+
+.con{
+  background: #f8f8f8;
+  padding-bottom: 50rpx;
+}
+
+.headerText{
+  font-weight: 600;
+  border-radius: 30rpx;
+  color: rgba(255, 255, 255, 0.7);
+  background: #3fcb7e;
+  position: absolute;
+  right: 30rpx;
+  padding: 10rpx 30rpx;
+  font-size: 26rpx;
+  line-height: 40rpx;
+  bottom: 30rpx;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.headerImg{
+  box-shadow: 0 2px 30px rgba(62, 204, 114, 0.2);
+  border-radius: 12rpx;
+  top: 2%;
+  left: 4%;
+  position: absolute;
+  width: 92%;
+  height: 340rpx;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-image: url('http://koalareading-test.oss-cn-beijing.aliyuncs.com/img/ds5_3.jpg')
+}
+
+.item{
+  background-color: #fff;
+  position: relative;
+  border-radius: 12rpx;
+  width: 92%;
+  margin-left: 4%;
+  box-shadow: 0 2px 30px rgba(62, 204, 114, 0.2);
+  min-height: 400rpx;
+  margin-bottom: 30rpx;
+}
+
+.items{
+  padding-bottom: 50rpx;
+  background: #f8f8f8;
+  margin-top: 40rpx;
+}
+
+.tagLittle{
+  float: right;
+  margin-right: 30rpx;
+  box-shadow: 0 2px 10px rgba(62, 204, 114, 0.2);
+  /* position: absolute;  */
+  margin-left: 30rpx;
+  margin-bottom: 20rpx;
+  font-size: 22rpx;
+  color: #fff;
+  height: 50rpx;
+  width: 140rpx;
+  background-color: #3fcb7e;
+  border-radius: 25rpx;
+  line-height: 50rpx;
+  text-align: center;
+}
+
+.authorImg{
+  margin-left: 30rpx;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 25rpx;
+  float: left;
+}
+
+.itemTitle{
+  font-size: 35rpx;
+  padding-top: 40rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 30rpx;
+}
+
+.dis{
+  text-indent: 55rpx;
+  line-height: 50rpx;
+  font-size: 29rpx;
+  padding-top: 10rpx;
+  padding-right: 30rpx;
+  padding-left: 30rpx;
+  color: #666;
+}
+
+.conImg{
+  width: 100%;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.conText{
+  text-indent: 55rpx;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  line-height: 50rpx;
+  font-size: 29rpx;
+  padding-top: 10rpx;
+  padding-right: 30rpx;
+  padding-left: 30rpx;
+  color: #666;
+}
+
+.onTitle{
+  opacity: .5;
+  font-size: 30rpx;
+  color: #666;
+  line-height: 60rpx;
+  margin: 20rpx 30rpx;
+  border-bottom: 1px solid #3fcb7e
+}
+
+.itemImage{
+  height: 240px;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 40rpx;
+   margin-bottom: 40rpx; 
+}
+
+.itemInfo{
+  padding-bottom: 20rpx;
+  padding-left: 30rpx;
+}
+
+.itemName{
+  margin-left: 10rpx;
+  line-height: 50rpx;
+  float: left;
+  font-size: 24rpx;
+  color: #3fcb7e;
+}
+
+.itemRight{
+  float: right;
+}
+
+.itemTime{
+  font-size: 24rpx;
+  color: #ccc;
+}
+
+.textName{
+  padding-left: 5rpx;
+  /* color: #999 */
+}
+
+.rInfo{
+  line-height: 24rpx;
+  padding-right: 30rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.rNum{
+  padding-left: 4rpx;
+  padding-right: 4rpx;
+  font-weight: 600;
+  font-size: 30rpx;
+  color: #3fcb7e;
+}
+
+.nav{
+  position: relative;
+  margin-left: 4%;
+  margin-top: 160rpx;
+  width: 92%;
+}
+
+.navItem{
+  font-weight: 600;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  float: left;
+  width: 30%;
+  height: 130rpx;
+  border-radius: 12rpx;
+}
+
+.jg{
+  float: left;
+  width: 5%;
+  height: 100rpx;
+}
+
+.tag_img{
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.navText{
+  padding-top: 20rpx;
+  line-height: 30rpx;
+  padding-left: 30rpx;
+  color: #fff;
+  font-size: 26rpx;
+}
+
+.navText2{
+  line-height: 30rpx;
+  padding-left: 30rpx;
+  color: #fff;
+  font-size: 23rpx;
+}
+
+.logo{
+  position: absolute;
+  right: 40rpx;
+  bottom: 100rpx;
+  width: 166rpx;
+  height: 96rpx;
+}

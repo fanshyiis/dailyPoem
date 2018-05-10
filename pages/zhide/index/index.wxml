@@ -1,0 +1,50 @@
+<!--pages/zhide/index/index.wxml-->
+<view class='con'>
+  <view class='header2'></view>
+  <view class='header'>
+    <view class='headerImg'>
+      <view class='headerText'>帮你遇见值得的事</view>
+      <image class='logo' src='../../../utils/img/logo.png'></image>
+    </view>
+  </view>
+   <view class='nav clear'>
+    <view class='navItem color1' bindtap='wait'>
+      <view class='navText'>最新值得</view>
+      <view class='navText2'>New</view>
+      <image class='tag_img' src='../../../utils/img/tag_youth.png'></image>
+    </view>
+    <view class='jg'></view>
+    <view class='navItem color2' bindtap='goCard'>
+      <view class='navText'>每日一诗</view>
+      <view class='navText2'>poet</view>
+      <image class='tag_img' src='../../../utils/img/tag_pick.png'></image>
+    </view>
+    <view class='jg'></view>
+    <view class='navItem color3' bindtap='wait'>
+      <view class='navText'>个人中心</view>
+      <view class='navText2'>Personal</view>
+      <image class='tag_img' src='../../../utils/img/dog_2.png'></image>
+    </view>
+  </view> 
+  <!-- <web-view src="https://zhide.leanapp.cn/index/newest"></web-view> -->
+  <view class='items' style='margin-top:40rpx;'>
+    <view class='item' bindtap="navigateToContent" data-zid="{{item.objectId}}" wx:key="{{index}}" wx:for="{{zhideList}}" wx:for-item="item" wx:if="{{zhideList.length > 0}}">
+      <view class='tagLittle'>评分: {{item.Rate}}</view>
+      <!-- <view class='itemTime'>{{item.Time}}</view> -->
+      <view class='itemTitle'>{{item.ZD_title}}</view>
+      <view class='dis'>{{item.ZD_summary}}</view>
+      <image class='itemImage' mode='aspectFit' src='{{item.mainPic.url}}'></image>
+      <view class='itemInfo clear'>
+        <view class='itemName'>@
+          <text class='textName'>{{item.belong.Nick}}</text>
+        </view>
+        <view class='itemRight'>
+          <view class='rInfo'>已有
+            <text class='rNum'>{{item.RateNum}}</text>人评分·
+            <text class='rNum'>{{item.RateNum}}</text>评论·
+            <text class='rNum'>{{item.lookNum}}</text>看</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
